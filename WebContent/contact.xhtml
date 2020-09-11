@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+	<title>Contato</title>
+</h:head>
+<h:body style="background : #333; color: white; transform : translateX(27%)">
+<b:panelGrid columns="1" col-md="6" style="justify-content: center; align-items: center; transform : translateY(50%); "  >
+		
+				<b:form>
+
+					<b:row>
+						<b:column >
+							<b:inputText label="Informe-nos seu nome" value="#{ContactController.name}"/>
+							<b:inputText label="Qual é seu e-mail para contato?" value="#{ContactController.email}"/>
+							<b:inputTextarea label="Deixe sua mensagem" value="#{ContactController.message}"/>
+							<b:commandButton value="Enviar" action="" />
+							
+						</b:column>
+					</b:row>
+			</b:form>
+		
+</b:panelGrid>
+
+</h:body>
+</html>
